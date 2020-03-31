@@ -1,0 +1,25 @@
+package com.java01;
+
+
+/**
+ * @author chengpengjiang
+ *
+ */
+
+public class TestFunction {
+	public static int add(int a, int b) {
+		return a+b;
+	}
+	public static int Recursive(int a) {
+		if(a == 1) {
+			return 1;
+		}else {
+			
+			return a * Recursive(a-1);
+		}
+	}
+	public static void main(String[] args) {
+		System.out.println(add(1,2));
+		System.out.println(Recursive(5));
+	}
+}
