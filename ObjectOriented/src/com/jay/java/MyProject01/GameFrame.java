@@ -27,6 +27,24 @@ import java.awt.event.WindowEvent;
  *		- g.drawString(str,x,y)
  *		- g.fillRect(x,y,w,h)
  *		- g.fillOval(x,y,w,h)
+ *System.out.println("paint");
+		// TODO Auto-generated method stub
+		// g是一个画笔，可以随意画东西，
+		g.drawLine(100, 100, 200, 200);
+		g.drawRect(100, 100, 200, 200);
+		//矩形的内切
+		g.drawOval(100, 100, 200, 200);
+		//字体设定
+		Font f = new Font("宋体",Font.BOLD,100);
+		g.setFont(f);
+		//字符串
+		g.drawString("jay", 200, 200);
+		
+		Color c = g.getColor();
+		g.setColor(new Color(255,0,0));
+		g.fillRect(200, 200, 10, 10);
+		g.fillOval(300, 300, 20, 20);
+			g.setColor(c);
  *	4.图片加载：
  *		- GameUtil工具类中提供getImage方法, 
  *			- 方法都是static方法
@@ -34,6 +52,9 @@ import java.awt.event.WindowEvent;
  *			- 外部只用调用static方法
  *		- 在GameFrame类中作为成员变量，然后在paint中使用g.drawImage(img,x,y.null)
  *	5.让图片动起来，
+ *		- 内部类：继承线程，线程中重写run函数，函数里面的调用外部类的方法repaint()
+ *		- 启动函数里,launch（）new一个新的线程对象，
+ *		- paint函数里面，drawImg里面的坐标可以改变
  *
  */
 public class GameFrame extends Frame{
@@ -47,6 +68,9 @@ public class GameFrame extends Frame{
 		this.setLocation(100,100);
 		//默认不可见
 		this.setVisible(true);
+		
+		
+		new PaintThread().start();
 		this.addWindowListener(new WindowAdapter() {
 
 			/* (non-Javadoc)
@@ -65,7 +89,7 @@ public class GameFrame extends Frame{
 	}
 	
 	
-	
+	private double x=100,y=100;
 	//2.窗口上面画东西
 	
 	/* (non-Javadoc)
@@ -73,28 +97,30 @@ public class GameFrame extends Frame{
 	 */
 	@Override
 	public void paint(Graphics g) {
-		// TODO Auto-generated method stub
-		// g是一个画笔，可以随意画东西，
-		g.drawLine(100, 100, 200, 200);
-		g.drawRect(100, 100, 200, 200);
-		//矩形的内切
-		g.drawOval(100, 100, 200, 200);
-		//字体设定
-		Font f = new Font("宋体",Font.BOLD,100);
-		g.setFont(f);
-		//字符串
-		g.drawString("jay", 200, 200);
-		
-		Color c = g.getColor();
-		g.setColor(new Color(255,0,0));
-		g.fillRect(200, 200, 10, 10);
-		g.fillOval(300, 300, 20, 20);
-		
-		g.drawImage(img, 200, 200, null);
-		//公用一支笔，换成自己的颜色，然后返回你set回去
-		g.setColor(c);
+			
+		g.drawImage(img,(int) x, (int)y, null);
+		x+=3;
+		//公用一支笔，换成自己的颜色，然后返回你set回
 		
 		
+	}
+	/*
+	 * 重画线程类
+	 * 内部类，方便调用外部类方法
+	 */
+	
+	class PaintThread extends Thread{
+		public void run() {
+			while(true) {
+				repaint();
+				try {
+					Thread.sleep(40);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
 	}
 
 	public static void main(String[] args) {
