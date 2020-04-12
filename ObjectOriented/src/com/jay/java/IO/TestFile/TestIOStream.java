@@ -189,6 +189,7 @@ public class TestIOStream {
 	}
 	/**
 	 * 文件夹的拷贝
+	 * 1. 不能将父目录拷贝到子目录中
 	 */
 	
 	public static void CopyDir() {
@@ -198,7 +199,11 @@ public class TestIOStream {
 		File dest = new File(destPath);
 		if(src.isDirectory()) {
 				//如果是目录就替换
-			dest = new File(destPath,src.getName()); 
+			dest = new File(destPath,src.getName());
+			if(dest.getAbsolutePath().contains(src.getAbsolutePath())) {
+				System.out.println("父目录不能拷贝到子目录里面");
+				return;
+			}
 		}
 		CopyDirDetails(src,dest);
 		//1. 递归，查找子孙级别
