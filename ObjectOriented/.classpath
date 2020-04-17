@@ -4,5 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/Users/chengpengjiang/Documents/coding/Java/java_study/guava-23.0.jar" sourcepath="/Users/chengpengjiang/Documents/coding/Java/java_study/commons-collections4-4.4/commons-collections4-4.4-test-sources.jar"/>
 	<classpathentry kind="lib" path="/Users/chengpengjiang/Documents/coding/Java/java_study/commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="/Users/chengpengjiang/Documents/coding/Java/java_study/javassist/javassist.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
