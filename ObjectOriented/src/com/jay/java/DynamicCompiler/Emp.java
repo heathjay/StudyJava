@@ -1,6 +1,7 @@
 package com.jay.java.DynamicCompiler;
-
+@Author(value = "jay")
 public class Emp {
+	@Author(value="jj")
 	private int empno;
 	private String ename;
 	public Emp(int empno, String ename) {
@@ -24,5 +25,7 @@ public class Emp {
 	public void setEname(String ename) {
 		this.ename = ename;
 	}
-	
+	public void sayHello(int a) {
+		System.out.println("sayHello+"+a);
+	}
 }
