@@ -7,7 +7,7 @@ package com.jay.java.JVM;
 public class Test02 {
 	public static void main(String[] args) {
 		//应用程序加载器
-		System.out.println(ClassLoader.getSystemClassLoader());
+		System.out.println(ClassLoader.getSystemClassLoader());//$JAVA_HOME/classPath
 		//扩展类加载器
 		System.out.println(ClassLoader.getSystemClassLoader().getParent());
 		//引导类加载器(C来写的)
