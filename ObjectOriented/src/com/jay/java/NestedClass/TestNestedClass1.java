@@ -83,6 +83,11 @@ public class TestNestedClass1 {
 		 * 	1. 定义了匿名内部类的类体
 		 * 	2. 创建了一个实例对象
 		 * 	3. 大部分会在方法里面进行声明并
+		 *  命名方式： new SomeInterfaceOrClas(){};
+		 *  4. 继承
+		 *  5. 接口
+		 *  6. 参数- 定义加上override直接生成对象
+		 *  
 		 */
 		Runnable runnable = new Runnable() {
 			
@@ -92,6 +97,17 @@ public class TestNestedClass1 {
 			}
 			
 		};
+		
+		Car car = new Car() {
+
+			@Override
+			public void run() {
+			System.out.println("子类车在跑");
+			}
+			
+		};
+		
+		car.run();//匿名内部类继承写法
 	}
 	Runnable runnable = new Runnable() {
 		
@@ -114,5 +130,11 @@ class Outer{
 		FieldInnerClass xx =out.new FieldInnerClass();
 		
 		FieldInnerClass yy = new TestNestedClass1().new FieldInnerClass();
+	}
+}
+
+class Car{
+	public void run() {
+		System.out.println("car runs");
 	}
 }

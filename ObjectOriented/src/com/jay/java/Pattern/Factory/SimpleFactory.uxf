@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>156</x>
+      <y>90</y>
+      <w>144</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+com.jay.java.Pattern.Factory::Car
+--
+--
+~run(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>198</y>
+      <w>150</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>com.jay.java.Pattern.Factory::Audi
+--
+--
++run(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>198</y>
+      <w>144</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>com.jay.java.Pattern.Factory::Byd
+--
+--
++run(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>174</x>
+      <y>138</y>
+      <w>60</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..
+&lt;&lt;realize&gt;&gt;</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>138</y>
+      <w>60</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..
+&lt;&lt;realize&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>198</x>
+      <y>132</y>
+      <w>240</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..
+&lt;&lt;creates&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;260.0;380.0;260.0;380.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>132</y>
+      <w>198</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..
+&lt;&lt;creates&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;240.0;310.0;240.0;310.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>222</x>
+      <y>138</y>
+      <w>48</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..
+&lt;&lt;know&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;330.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>336</y>
+      <w>228</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>com.jay.java.Pattern.Factory::ClientWithSimpleFactory
+--
+--
++main(String[] args): void
+--
+
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>414</x>
+      <y>96</y>
+      <w>174</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>com.jay.java.Pattern.Factory::CarFactory
+--
+--
++createCar(String type): Car
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>102</y>
+      <w>132</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..
+&lt;&lt;realize&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>342</x>
+      <y>132</y>
+      <w>174</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..
+&lt;&lt;knows&gt;&gt;</panel_attributes>
+    <additional_attributes>210.0;10.0;220.0;370.0;10.0;370.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>60</x>
+      <y>72</y>
+      <w>642</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>Package 1
+--
+
+
+bg=gray
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
