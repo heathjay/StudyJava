@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>4</zoom_level>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>204</x>
+      <y>112</y>
+      <w>184</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>440.0;10.0;10.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>336</x>
+      <y>112</y>
+      <w>88</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>200.0;10.0;10.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>456</x>
+      <y>112</y>
+      <w>64</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>312</x>
+      <y>80</y>
+      <w>164</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>AbstractFile
+--
+-name: String
+-list = new ArrayList&lt;AbstractFile&gt;(): List&lt;AbstractFile&gt;
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>116</x>
+      <y>212</y>
+      <w>164</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>TextFile
+--
+-name: String
+-list = new ArrayList&lt;AbstractFile&gt;(): List&lt;AbstractFile&gt;
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>288</x>
+      <y>212</y>
+      <w>164</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>VideoFile
+--
+-name: String
+-list = new ArrayList&lt;AbstractFile&gt;(): List&lt;AbstractFile&gt;
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>212</y>
+      <w>164</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>ImageFile
+--
+-name: String
+-list = new ArrayList&lt;AbstractFile&gt;(): List&lt;AbstractFile&gt;
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>656</x>
+      <y>208</y>
+      <w>164</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Folder
+--
+-name: String
+-list = new ArrayList&lt;AbstractFile&gt;(): List&lt;AbstractFile&gt;
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>472</x>
+      <y>104</y>
+      <w>268</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;650.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>472</x>
+      <y>96</y>
+      <w>416</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>860.0;320.0;1020.0;320.0;1020.0;20.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
