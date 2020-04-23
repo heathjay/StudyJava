@@ -1,144 +1,177 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>4</zoom_level>
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>100</y>
+      <w>70</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Client
+--
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>110</y>
+      <w>100</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>ICar
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>250</y>
+      <w>90</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Car
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>360</y>
+      <w>100</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>AICar
+--
+#car: ICar
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>360</y>
+      <w>100</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>FlyCar
+--
+#car: ICar
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>360</y>
+      <w>90</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>WaterCar
+--
+#car: ICar
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>230</y>
+      <w>90</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>SuperCar
+--
+#car: ICar
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>204</x>
-      <y>112</y>
-      <w>184</w>
-      <h>108</h>
+      <x>80</x>
+      <y>180</y>
+      <w>180</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>250</x>
+      <y>180</y>
+      <w>160</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>300</y>
+      <w>130</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>440.0;10.0;10.0;250.0</additional_attributes>
+    <additional_attributes>110.0;10.0;10.0;60.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
-      <y>112</y>
-      <w>88</w>
-      <h>108</h>
+      <x>410</x>
+      <y>300</y>
+      <w>40</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>200.0;10.0;10.0;250.0</additional_attributes>
+    <additional_attributes>20.0;10.0;10.0;60.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>456</x>
-      <y>112</y>
-      <w>64</w>
-      <h>108</h>
+      <x>430</x>
+      <y>300</y>
+      <w>160</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;140.0;250.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>312</x>
-      <y>80</y>
-      <w>164</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>AbstractFile
---
--name: String
--list = new ArrayList&lt;AbstractFile&gt;(): List&lt;AbstractFile&gt;
---
---
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>116</x>
-      <y>212</y>
-      <w>164</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>TextFile
---
--name: String
--list = new ArrayList&lt;AbstractFile&gt;(): List&lt;AbstractFile&gt;
---
---
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>288</x>
-      <y>212</y>
-      <w>164</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>VideoFile
---
--name: String
--list = new ArrayList&lt;AbstractFile&gt;(): List&lt;AbstractFile&gt;
---
---
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>456</x>
-      <y>212</y>
-      <w>164</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>ImageFile
---
--name: String
--list = new ArrayList&lt;AbstractFile&gt;(): List&lt;AbstractFile&gt;
---
---
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>656</x>
-      <y>208</y>
-      <w>164</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Folder
---
--name: String
--list = new ArrayList&lt;AbstractFile&gt;(): List&lt;AbstractFile&gt;
---
---
-</panel_attributes>
-    <additional_attributes/>
+    <additional_attributes>10.0;10.0;140.0;60.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>472</x>
-      <y>104</y>
-      <w>268</w>
-      <h>112</h>
+      <x>130</x>
+      <y>250</y>
+      <w>240</w>
+      <h>30</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;650.0;260.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>472</x>
-      <y>96</y>
-      <w>416</w>
-      <h>136</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>860.0;320.0;1020.0;320.0;1020.0;20.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;220.0;10.0</additional_attributes>
   </element>
 </diagram>
