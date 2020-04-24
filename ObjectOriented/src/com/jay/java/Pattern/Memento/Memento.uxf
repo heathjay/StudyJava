@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>0</y>
+      <w>430</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>CareTaker
+--
+-mmt: EmpMemento
+-list = new ArrayList&lt;EmpMemento&gt;(): List&lt;EmpMemento&gt;
+--
++getMmt: EmpMemento
++setMmt: void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>20</y>
+      <w>100</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Client
+--
+--
++main: void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>190</y>
+      <w>200</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>Emp
+--
+-ename: String
+-age: int
+-salary: double
+--
++Emp: ctor
++memento: EmpMemento
++recovery: void
++getEname: String
++setEname: void
++getAge: int
++setAge: void
++getSalary: double
++setSalary: void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>200</y>
+      <w>160</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>EmpMemento
+--
+-ename: String
+-age: int
+-salary: double
+--
++EmpMemento: ctor
++getEname: String
++setEname: void
++getAge: int
++setAge: void
++getSalary: double
++setSalary: void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>110</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>270</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>130</x>
+      <y>70</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>80</x>
+      <y>80</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
